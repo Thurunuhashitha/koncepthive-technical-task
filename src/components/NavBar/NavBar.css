@@ -1,0 +1,134 @@
+/* NavBar.css */
+
+:root {
+  --primary-color: #ff4d00; /* Energetic dark orange/red for gym feel */
+  --bg-color: #0a0a0a;   /* Deep dark background */
+  --text-color: #ffffff;
+  --hover-color: #ff751a;
+  --nav-height: 80px;
+}
+
+.navbar {
+  background-color: var(--bg-color);
+  height: var(--nav-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  border-bottom: 2px solid var(--primary-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--nav-height);
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 30px;
+}
+
+.navbar-logo a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.navbar-logo span {
+  color: var(--primary-color);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-item {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-item:hover {
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* Mobile Toggle */
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background: var(--text-color);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 960px) {
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - var(--nav-height));
+    position: absolute;
+    top: var(--nav-height);
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background: var(--bg-color);
+  }
+
+  .navbar-links.active {
+    left: 0;
+    opacity: 1;
+    z-index: 99;
+  }
+
+  .nav-item {
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-item:hover {
+    background-color: #1a1a1a;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  /* Hamburger to X transition (optional improvement) */
+  .navbar-toggle.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar-toggle.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .navbar-toggle.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
