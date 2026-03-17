@@ -1,13 +1,11 @@
-import './App.css'
-import Home from '../pages/Home'
+import Dashboard from '../pages/Dashboard/Dashboard';
 
-function App() { 
-
+function App() {
   return (
-    <div> 
-      <Home/>
+    <div>
+      <Dashboard />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
