@@ -9,6 +9,7 @@ import Trainers from "../Trainers/Trainers";
 import Plans from "../Plans/Plans";
 import Testimonials from "../Testimonials/Testimonials"
 import Contact from "../Contact/Contact" 
+import Footer from "../../components/Footer/Footer"
 
 function useScrollReveal() {
   useEffect(() => {
@@ -51,6 +52,7 @@ export default function Dashboard() {
       <Plans/>
       <Testimonials/>
       <Contact/> 
+      <Footer/>
     </div>
   );
 }
