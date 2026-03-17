@@ -5,6 +5,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import Home from "../Home/Home"; 
 import About from "../About/About";
 import Services from "../Services/Services"
+import Trainers from "../Trainers/Trainers"
 
 function useScrollReveal() {
   useEffect(() => {
@@ -43,6 +44,7 @@ export default function Dashboard() {
       <Home /> 
       <About/>
       <Services />
+      <Trainers/>
     </div>
   );
 }
