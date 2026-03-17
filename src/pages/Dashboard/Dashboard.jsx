@@ -3,6 +3,7 @@ import "../../global/style.css";
 
 import NavBar from "../../components/NavBar/NavBar"; 
 import Home from "../Home/Home"; 
+import About from "../About/About";
 
 function useScrollReveal() {
   useEffect(() => {
@@ -39,6 +40,7 @@ export default function Dashboard() {
     <div>
       <NavBar theme={theme} toggleTheme={toggleTheme} />
       <Home /> 
+      <About/>
     </div>
   );
 }
