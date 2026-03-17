@@ -4,8 +4,9 @@ import "../../global/style.css";
 import NavBar from "../../components/NavBar/NavBar"; 
 import Home from "../Home/Home"; 
 import About from "../About/About";
-import Services from "../Services/Services"
-import Trainers from "../Trainers/Trainers"
+import Services from "../Services/Services";
+import Trainers from "../Trainers/Trainers";
+import Plans from "../Plans/Plans";
 
 function useScrollReveal() {
   useEffect(() => {
@@ -45,6 +46,7 @@ export default function Dashboard() {
       <About/>
       <Services />
       <Trainers/>
+      <Plans/>
     </div>
   );
 }
