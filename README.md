@@ -45,3 +45,8 @@ The output will be in the `dist` directory.
 
 ## ● Live Link
 [Live Demo](https://gym.thurunu.me)  
+
+## Figma Link
+https://www.figma.com/design/2RTDdL3FdGRAd77dQKfsge/Untitled?node-id=0-1&t=AR3CbMLyU3SaGkUV-1
+https://www.figma.com/proto/2RTDdL3FdGRAd77dQKfsge/Untitled?node-id=0-1&t=AR3CbMLyU3SaGkUV-1
+
