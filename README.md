@@ -1,16 +1,47 @@
-# React + Vite
+# Fitness SC - Gym Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive gym management website built with React and Vite. Features include a dynamic landing page, service listings, trainer profiles, subscription plans, and a contact section.
 
-Currently, two official plugins are available:
+## ● Project Name
+**Fitness SC - Gym Management System**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ● Tech Stack
+- **Frontend**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vite.dev/)
+- **Styling**: Vanilla CSS (Custom properties for Light/Dark modes)
+- **Features**: Scroll Reveal Animations, Responsive Design, Theme Switching
 
-## React Compiler
+## ● Setup Instructions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- npm (comes with Node.js)
 
-## Expanding the ESLint configuration
+### Installation Steps
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   ```
+2. **Navigate to the project directory**:
+   ```bash
+   cd gym
+   ```
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+4. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+   The application will be available at `http://localhost:5173`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Building for Production
+To create an optimized production build, run:
+```bash
+npm run build
+```
+The output will be in the `dist` directory.
+
+## ● Live Link
+[Live Demo](https://gym.thurunu.me)  
